@@ -1,0 +1,13 @@
+<script>
+    let price = new Map();
+    price.set('apple', 2.41);
+    price.set('banana', 3.19);
+    price.set('pear', 2.02);
+    let priceIt = price[Symbol.iterator]();
+    while (true) {
+        i = priceIt.next();
+        if (i.done) break;
+        console.log(...(i.value));
+
+    }
+</script>
